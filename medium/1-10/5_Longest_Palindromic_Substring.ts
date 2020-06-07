@@ -10,7 +10,7 @@
 // 中心扩散法
 function longestPalindrome(s: string): string {
     let res: string = "";
-    for(let i = 0 ; i < s.length; i++) {
+    for(let i: number = 0 ; i < s.length; i++) {
         let len1: number = calPalindromeLen(s, i, i);
         let len2: number = calPalindromeLen(s, i, i + 1);
         let max: number = Math.max(len1, len2);
@@ -39,8 +39,8 @@ function longestPalindrome2(s: string): string {
         dp[start][start] = true;
         start++;
     }
-    for(let j = 1; j < s.length; j++){
-        for(let i = 0; i < s.length && j > i; i++){
+    for(let j: number = 1; j < s.length; j++){
+        for(let i: number = 0; i < s.length && j > i; i++){
             if (i + 1 <= j - 1) {
                 dp[i][j] = dp[i + 1][j - 1] && s[i] === s[j];
             } else {
