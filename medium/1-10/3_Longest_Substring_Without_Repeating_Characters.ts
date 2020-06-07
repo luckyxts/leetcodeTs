@@ -22,7 +22,7 @@ function lengthOfLongestSubstring(s: string): number {
         max = Math.max(max, str.length);
     }
     return max;
-};
+}
 
 // 2.双指针
 function lengthOfLongestSubstring2(s: string): number {
