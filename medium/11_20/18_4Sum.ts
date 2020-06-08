@@ -2,6 +2,7 @@
  * Created by Administrator on 2020/6/8.
  */
 function fourSum(nums: number[], target: number): number[][] {
+    // 3指针
     let res: number[][] =[];
     let arr: number[] = nums.sort((a, b) => a - b);
     for(let i: number = 0; i < arr.length - 3; i++){

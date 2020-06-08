@@ -2,6 +2,7 @@
  * Created by Administrator on 2020/6/8.
  */
 function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
+    // 放一个数组缓存地址
     let tmp: ListNode[] = [];
     let len = 0;
     let p: ListNode | null= head;
