@@ -2,7 +2,7 @@
  * Created by Administrator on 2020/6/9.
  */
 function swapPairs(head: ListNode | null): ListNode | null {
-    let thead: any = {}
+    let thead: any = {};
     thead.next = head;
     let c: ListNode = thead;
     while( c.next && c.next.next){
