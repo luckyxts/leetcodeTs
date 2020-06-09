@@ -1,1 +1,1 @@
-这是一个用typescript刷中等难度leetcode的repository
+这是一个用typescript刷leetcode的repository
