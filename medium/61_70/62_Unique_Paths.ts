@@ -3,9 +3,9 @@
  */
 function uniquePaths(m: number, n: number): number {
     let dp: number[][] = [];
-    for(let i = 0 ; i < n; i++){
+    for(let i: number = 0 ; i < n; i++){
         dp[i] = [];
-        for(let j = 0; j < m ; j++){
+        for(let j: number = 0; j < m ; j++){
             if(i === 0 || j === 0){
                 dp[i][j] = 1;
             }else{
