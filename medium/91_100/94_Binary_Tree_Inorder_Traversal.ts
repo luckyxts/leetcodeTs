@@ -17,5 +17,23 @@ function inorderTraversal(root: TreeNode | null): number[] {
 }
 
 function inorderTraversal2(root: TreeNode | null): number[] {
+    let res: number[] = [];
+    if(!root ){
+        return res;
+    }
+    let quene: TreeNode[] =[];
+    let cur: TreeNode | null = root;
+    while( cur || quene.length > 0 ){
+        while( cur ) {
+            quene.push(cur);
+            cur = cur.left;
+        }
+        cur = quene.pop() || null;
+        if( cur ){
+            res.push(cur.val);
+            cur = cur.right;
+        }
+    }
 
+    return res;
 }
